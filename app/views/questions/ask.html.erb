@@ -1,2 +1,9 @@
-<h1>Questions#ask</h1>
-<p>Find me in app/views/questions/ask.html.erb</p>
+<div class="container mt-5">
+  <h1 class="mb-4">Pregúntale al coach</h1>
+  <form action="/answer" method="get" class="mb-3">
+    <div class="input-group">
+      <input type="text" name="question" class="form-control" placeholder="¿Qué quieres preguntar?">
+      <button type="submit" class="btn btn-primary">Ask!</button>
+    </div>
+  </form>
+</div>

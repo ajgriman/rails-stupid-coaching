@@ -1,2 +1,27 @@
-<h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
+<div class="container mt-5">
+  <h1 class="mb-4">Respuesta del Coach</h1>
+
+  <div class="card mb-4">
+    <div class="card-header bg-light">
+      <h5>Tu pregunta:</h5>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p><%= @question %></p>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header bg-warning">
+      <h5>Respuesta:</h5>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p class="text-dark"><%= @answer %></p>
+      </blockquote>
+    </div>
+  </div>
+
+  <%= link_to "Preguntar otra cosa", ask_path, class: "btn btn-primary mt-4" %>
+</div>
